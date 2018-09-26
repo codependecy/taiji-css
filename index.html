@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #taiji{
+            width: 150px;
+            height: 300px;
+            margin: 300px auto;
+            border: 2px solid #000;
+            border-right-width: 152px; 
+            border-radius: 50%;
+            position: relative;
+        }
+        #taiji::after{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            background: #fff;
+            top: 0;
+            left: 70px;
+            border: 60px solid #000;
+        }
+        #taiji::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            background: #000;
+            top: 150px;
+            left: 80px;
+            border: 60px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="taiji">
+    </div>
+</body>
+</html>
